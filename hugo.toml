@@ -1,0 +1,54 @@
+baseURL = "https://kuang-r.github.io/"
+locale = "zh-cn"
+title = "阮华锋的个人博客"
+theme = "PaperMod"
+
+[params]
+description = "随缘更新"
+author = "阮华锋"
+github_username = "kuang-R"
+comments = true
+ShowReadingTime = true
+ShowShareButtons = false
+ShowToc = true
+ShowPostNavLinks = true
+ShowCodeCopyButtons = true
+ShowBreadCrumbs = true
+
+[params.socialLinks]
+url = "https://github.com/kuang-R"
+icon = "github"
+
+[params.homeInfoParams]
+Title = "阮华锋的个人博客"
+Content = "随缘更新"
+
+[params.profileMode]
+enabled = false
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = "monokai"
+codeFences = true
+guessSyntax = true
+lineNos = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[menu]
+[[menu.main]]
+name = "文章"
+url = "/posts/"
+weight = 1
+[[menu.main]]
+name = "关于"
+url = "/about/"
+weight = 2
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
